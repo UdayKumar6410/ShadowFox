@@ -29,27 +29,14 @@
         </div>
     </header>
 
-    <!--- Banner -->
-    <section class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 d-flex align-items-center justify-content-center bg-warning text-white p-5">
-                <div>
-                    <h1>Discover the Future With Amazon!</h1>
-                    <p class="mb-4"><em>Innovation is not solely about major discoveries.<br>It's about constantly challenging the status quo.</em></p>
-                    <a href="products.html" class="btn btn-light btn-lg">Shop Now &#10142;</a>
-                </div>
-            </div>
-            <div class="col-md-6 banner-image"></div>
-        </div>
-    </section>
-    
-    <!--- Featured Products -->
+    <!--- Products Section -->
     <div class="container my-5">
-        <h2 class="text-center mb-4">Featured Products</h2>
+        <h2 class="text-center mb-4">Our Products</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <!-- Product 1 -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="img/product-1.jpg" class="card-img-top" alt="Product">
+                    <img src="img/product-1.jpg" class="card-img-top" alt="Travel Adapter">
                     <div class="card-body">
                         <h5 class="card-title">Travel Adapter</h5>
                         <p class="card-text">₹599.00</p>
@@ -62,9 +49,10 @@
                     </div>
                 </div>
             </div>
+            <!-- Product 2 -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="img/product-2.jpg" class="card-img-top" alt="Product">
+                    <img src="img/product-2.jpg" class="card-img-top" alt="Phone Stand Holder">
                     <div class="card-body">
                         <h5 class="card-title">Phone Stand Holder</h5>
                         <p class="card-text">₹499.00</p>
@@ -77,30 +65,48 @@
                     </div>
                 </div>
             </div>
+            <!-- Product 3 -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="img/product-3.jpg" class="card-img-top" alt="Product">
+                    <img src="img/product-3.jpg" class="card-img-top" alt="Hands-free BT Receiver">
                     <div class="card-body">
                         <h5 class="card-title">Hands-free BT Receiver</h5>
                         <p class="card-text">₹345.00</p>
                         <form action="cart.html" method="GET">
                             <input type="hidden" name="product" value="Hands-free BT Receiver">
-                            <input type="hidden" name="price" value="₹345.00">
+                            <input type="hidden" name="price" value="345.00">
                             <input type="hidden" name="quantity" value="1">
                             <input type="submit" class="btn btn-warning" value="Add to Cart">
                         </form>
                     </div>
                 </div>
             </div>
+            <!-- Product 4 -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="img/product-4.jpg" class="card-img-top" alt="Product">
+                    <img src="img/product-4.jpg" class="card-img-top" alt="Portable Desk Fan">
                     <div class="card-body">
                         <h5 class="card-title">Portable Desk Fan</h5>
                         <p class="card-text">₹399.00</p>
                         <form action="cart.html" method="GET">
                             <input type="hidden" name="product" value="Portable Desk Fan">
-                            <input type="hidden" name="price" value="₹399.00">
+                            <input type="hidden" name="price" value="399.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/new-product.jpg" class="card-img-top" alt="Smart Ring">
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Ring</h5>
+                        <p class="card-text">₹199.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Smart Ring">
+                            <input type="hidden" name="price" value="199.00">
                             <input type="hidden" name="quantity" value="1">
                             <input type="submit" class="btn btn-warning" value="Add to Cart">
                         </form>
@@ -109,61 +115,9 @@
             </div>
         </div>
     </div>
-    <hr>
-
-    <!--- New Product -->
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-md-6">
-                <img src="img/new-product.jpg" class="img-fluid" alt="New Product">
-            </div>
-            <div class="col-md-6 d-flex align-items-center">
-                <div>
-                    <p>Our Newest Product Offer</p>
-                    <h1>Smart Ring</h1>
-                    <small>Track your fitness journey effortlessly with the Smart Ring, a sleek wearable that combines style and health monitoring right on your fingertip.</small>
-                    <br>
-                    <form action="cart.html" method="GET">
-                        <input type="hidden" name="product" value="Smart Ring">
-                        <input type="hidden" name="price" value="199.00">
-                        <input type="hidden" name="quantity" value="1">
-                        <input type="submit" class="btn btn-warning" value="Add to Cart">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr>
-
-    <!-- Contact Us Section -->
-    <section id="contact" class="container my-5">
-        <div class="row">
-            <div class="col-12 mb-4">
-                <h2 class="text-center">Contact Us</h2>
-            </div>
-            <div class="col-md-8 mx-auto border rounded p-4 shadow-sm">
-                <!-- Assuming you might want a form for the users to fill out -->
-                <form>
-                    <div class="mb-3">
-                        <label for="contactName" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="contactName" placeholder="Enter your name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="contactEmail" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="contactEmail" placeholder="Enter your email">
-                    </div>
-                    <div class="mb-3">
-                        <label for="contactMessage" class="form-label">Message</label>
-                        <textarea class="form-control" id="contactMessage" rows="3" placeholder="Your message"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-warning">Submit</button>
-                </form>
-            </div>
-        </div>
-    </section>
 
    <!--- Footer -->
-    <footer class="bg-dark text-light py-4">
+   <footer class="bg-dark text-light py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
